@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import StorsViewVue from '../views/StorsView.vue';
-import SigninViewVue from "../views/SigninView.vue"
+import HomeView from '@/views/HomeView.vue'
+import StoresViewVue from '@/views/StoresView.vue';
+import SigninViewVue from "@/views/SigninView.vue"
 import JoinViewVue from '@/views/JoinView.vue';
 import HelpViewVue from "@/views/HelpView.vue"
 import JobsViewVue from "@/views/JobsView.vue"
+import InvestorsViewVue from "@/views/InvestorsView.vue"
+import ShopViewVue  from "@/views/ShopView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,8 +18,8 @@ const router = createRouter({
     },
     {
       path: '/retail',
-      name: 'about',
-      component: StorsViewVue
+      name: 'Stiors',
+      component: StoresViewVue
     },
     {
       path: '/help',
@@ -38,6 +40,16 @@ const router = createRouter({
       path: '/jobs',
       name: 'jobs',
       component: JobsViewVue
+    },
+    {
+      path: '/investors',
+      name: 'Investors',
+      component: InvestorsViewVue
+    },
+    {
+      path: '/shop',
+      name: 'shop',
+      component: ShopViewVue
     }
   ]
 })

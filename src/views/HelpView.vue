@@ -35,7 +35,8 @@ const faqs = [
     },
     
 ]
-
+const like = ref(false)
+const dislike = ref(false)
 let search = ref("")
 
 function Search(){
@@ -83,6 +84,14 @@ function goFaqs(){
                         <h3 @click="faq.open.value = !faq.open.value" class="mb-3 text-lg pl-1 cursor-pointer">{{faq.title}}</h3>
                         <p v-show="faq.open.value" class="pl-4">{{faq.desc}}</p>
                     </div>
+                </div>
+            </div>
+
+            <div>
+                <p class="underline">Was this answer helpful?</p>
+                <div class="flex mt-2 gap-2 ">
+                    <img @click="like = !like , dislike = !like " :class="{'bg-green-600': like}" class="p-1 rounded-full" src="@/assets/images/like.svg" alt="Like">
+                    <img @click="dislike = !dislike , like = !dislike" :class="{'bg-red-600': dislike}" class="p-1 rounded-full" src="@/assets/images/dislike.svg" alt="DisLike">
                 </div>
             </div>
         </div>

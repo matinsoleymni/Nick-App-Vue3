@@ -6,16 +6,16 @@
                     <p><router-link to="/retail">Find A Store</router-link></p>
                     <p><router-link to="/joinUs">Become A Member</router-link></p>
                     <p><router-link to="/signin">Sign Up for Email</router-link></p>
-                    <p>Send Us Feedback</p>
+                    <p><router-link to="/feedback">Send Us Feedback</router-link></p>
                     <p>Student Discounts</p>
                 </div>
                 <div class="text-gray-500 flex flex-col gap-2">
                     <p class="text-gray-50">Get Help</p>
-                    <p>Order Status</p>
-                    <p>Delivery</p>
-                    <p>Returns</p>
-                    <p>Payment Options</p>
-                    <p><router-link to="/help#contact">Contact Us</router-link></p>
+                    <p><router-link to="/order-status">Order Status</router-link></p>
+                    <p><router-link to="/help">Delivery</router-link></p>
+                    <p><router-link to="/help">Returns</router-link></p>
+                    <p><router-link to="/help">Payment Options</router-link></p>
+                    <p><router-link to="/help">Contact Us</router-link></p>
                 </div>
                 <div class="text-gray-500 flex flex-col gap-2 pr-10">
                     <p class="text-gray-50">About Nike</p>
@@ -30,8 +30,6 @@
                 <a href="#"><img src="@/assets/images/facebook.svg" alt="facebook"></a>
                 <a href="#"><img src="@/assets/images/youtube.svg" alt="youtube"></a>
                 <a href="#"><img src="@/assets/images/instagram.svg" alt="instagram"></a>
-                
-                
             </div>
         </div>
 
