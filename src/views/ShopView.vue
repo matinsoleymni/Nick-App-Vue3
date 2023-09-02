@@ -1,3 +1,3 @@
 <template>
-
+Shop
 </template>
