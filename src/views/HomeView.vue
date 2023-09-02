@@ -23,7 +23,7 @@ import TheCart   from '@/components/TheCart.vue'
           —designed to push you past your limits and help you go to the max.</p>
         <div class="flex justify-center gap-4">
           <TheButton Text="Notify Me" />
-          <TheButton Text="Shop Air Max" />
+          <router-link to="/shop"><TheButton Text="Shop Air Max" /></router-link>
         </div>
       </div>
       
@@ -91,7 +91,7 @@ import TheCart   from '@/components/TheCart.vue'
     <div class="text-center mt-10">
       <h2 class="font-medium text-6xl">FLIGHT ESSENTIALS</h2>
       <p class="py-5">Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.</p>
-      <TheButton Text="Shop" />
+      <router-link to="/shop"><TheButton Text="Shop" /></router-link>
     </div>
 
 

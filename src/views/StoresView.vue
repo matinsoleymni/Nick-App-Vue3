@@ -132,7 +132,6 @@ function Search(){
                     <p class="text-sm text-gray-400">{{store.desc}}</p>
                     <p>{{store.location}}</p>
                     <p class="mb-2"><span :class="{'text-green-600': store.status , 'text-red-600': !store.status}">{{store.opens}} </span> . {{store.clock}}</p>
-
                 </div>
 
                 <p @click="showAll()" class="underline text-lg mt-5 ml-5 cursor-pointer">View All Stores</p>
