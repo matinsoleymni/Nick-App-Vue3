@@ -22,7 +22,6 @@ const getJobs = async() => {
 
 onMounted(()=> {
     getJobs()
-    console.log(careers.value);
 })
 
 let search = ref("")
